@@ -219,7 +219,7 @@ def main():
         if model_name in ["Ridge", "Lasso"]:
             alpha_log = st.slider(
                 f"Alpha (α) for {model_name}",
-                min_value=-5.0, max_value=5.0, value=-5.0, step=0.5,
+                min_value=-5.0, max_value=5.0, value=1.0, step=0.5,
                 format="10^%.1f",
                 help="Logarithmic scale: 10^x"
             )
