@@ -276,8 +276,8 @@ def main():
             st.metric("MAE (Test)", f"{metrics['mae_test']:.4f}")
 
         with col3:
-            st.metric("MAPE (Train)", f"{metrics['mape_train']:.4f}")
-            st.metric("MAPE (Test)", f"{metrics['mape_test']:.4f}")
+            st.metric("MAPE (Train)", f"{metrics['mape_train']:.2%}")
+            st.metric("MAPE (Test)", f"{metrics['mape_test']:.2%}")
 
         with col4:
             st.metric("R² (Train)", f"{metrics['r2_train']:.4f}")
