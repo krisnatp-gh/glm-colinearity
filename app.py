@@ -224,7 +224,7 @@ def main():
                 help="Logarithmic scale: 10^x"
             )
             alpha_value = 10 ** alpha_log
-            st.caption(f"Actual α = {alpha_value:.6f}")
+            st.caption(f"Actual α = {alpha_value:.2e}")
         else:
             alpha_value = None
             st.info("Linear Regression has no regularization parameter")
